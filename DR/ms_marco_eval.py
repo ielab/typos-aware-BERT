@@ -182,10 +182,10 @@ def compute_metrics(qids_to_relevant_passageids, qids_to_ranked_candidate_passag
 
     # avg_ranking = avg_ranking / num_valid
     # all_scores['Avg Ranking'] = avg_ranking
-    import json
-    json = json.dumps(mrr_dic)
-    f = open(f"{path_to_candidate}.json", "w")
-    f.write(json)
+    # import json
+    # json = json.dumps(mrr_dic)
+    # f = open(f"{path_to_candidate}.json", "w")
+    # f.write(json)
     return all_scores, all_MRR, all_recall
 
 

@@ -97,7 +97,7 @@ class MsmarcoPassageCrossEncoderTrainSet(Dataset):
                         rand_negatives = list(map(str, torch.randint(len(self.collection), (num_neg_per_pos,)).numpy()))
                     for neg_docid in rand_negatives:
                         data.append((qid, neg_docid, 0))
-        self.np_data = np.array(copy.deepcopy(data), dtype=np.string_)  # try to solve memory leaking problem here
+        self.np_data = np.array(copy.deepcopy(data), dtype=np.string_)  # otherwise memory leaking
         del all_top_results, data
         gc.collect()
 

@@ -30,7 +30,7 @@ def collate_fn(batch):
 def main(args):
     seed_everything(313)
     torch.multiprocessing.set_sharing_strategy('file_system')
-    log_name = f"bert_reranker_{args.training_setting}_bs64_gpu4_RepBERT_top1000_adam_lr3e-6_warm5000"
+    log_name = f"bert_reranker_{args.training_setting}_bs64_gpu2_RepBERT_top1000_adam_lr3e-6_warm5000"
     dataset_path = "data/runs/DPR/msmarco/RepBert_msmarco_train_top1000_results.txt"
     path_to_qrel = "data/qrels/passage/qrels.train.tsv"
     path_to_query = "data/queries/passage/queries.train.tsv"

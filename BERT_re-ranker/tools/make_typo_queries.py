@@ -1,20 +1,19 @@
-from tools.read_files import read_query_lines
-from tools.write_files import write_query_file
+from read_files import read_query_lines
+from write_files import write_query_file
 from textattack.transformations import WordSwapNeighboringCharacterSwap, \
     WordSwapRandomCharacterDeletion, WordSwapRandomCharacterInsertion, \
     WordSwapRandomCharacterSubstitution
 from textattack.augmentation import Augmenter
 from textattack.transformations import CompositeTransformation
 from textattack.constraints.pre_transformation.min_word_length import MinWordLength
-from dataset import FixWordSwapQWERTY
+from ..dataset import FixWordSwapQWERTY
 from tqdm import tqdm
 
 
 def main():
     query_path = '../data/queries/passage/queries.dev.small.tsv'
     out_path = '../data/queries/passage/queries.dev.small.SwapAdjacent'
-    # query_path = '../data/queries/passage/DL2020-queries.tsv'
-    # out_path = '../data/queries/passage/DL2020-queries.typo'
+
     query_lines = read_query_lines(query_path)
     transformation = CompositeTransformation([
         # WordSwapRandomCharacterDeletion(),

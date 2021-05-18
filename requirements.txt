@@ -1,0 +1,9 @@
+nltk==3.5
+pandas==1.2.2
+pytorch-lightning==1.1.8
+pytrec-eval==0.5
+scipy==1.4.1
+textattack==0.2.15
+torch==1.7.1
+torch-optimizer==0.1.0
+transformers==4.3.2
