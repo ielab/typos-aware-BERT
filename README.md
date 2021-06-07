@@ -23,12 +23,12 @@ Note the queries you will generated may differ from those used in the paper beca
 The code for reproducing the DR models used in our paper is in the `./DR` folder.
 We use an open-source implementation forked (anonymously) from the [RepBERT-Index repository](https://github.com/jingtaozhan/RepBERT-Index).
 
-To train DR with standard training settings, `cd` into the `./DR` folder and follow the instructions from the original repository.
+To train DR with standard training settings, `cd` into the `./DR` folder and follow the instructions from the original repository. (Note: the original repository doesn't give instructions of evaluating during training, hence need to comment out `--evaluate_during_training`)
 
 To train typos-aware DR, run the following command without changing any other parameter:
  
 ```
-python ./train.py --task train --insert_typo 1 --evaluate_during_training
+python ./train.py --task train --insert_typo 1
 ```
 
 ## Train BERT re-ranker Models
