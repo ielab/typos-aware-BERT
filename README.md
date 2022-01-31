@@ -33,7 +33,8 @@ python ./train.py --task train --insert_typo 1
 
 ## Train BERT re-ranker Models
 The code for reproducing the BERT re-ranker models used in our paper is in the `./BERT_re-ranker` folder. 
-The file 'data/runs/RepBert_msmarco_train_top1000_results.txt' that used to build the training data for re-ranker can be downloaded from here: https://drive.google.com/file/d/1R_DGYoHK1RrZedl_GvNcmJFLsnm9GkPB/view?usp=sharing 
+
+The file `data/runs/RepBert_msmarco_train_top1000_results.txt` that used to build the training data for re-ranker can be downloaded from here: https://drive.google.com/file/d/1R_DGYoHK1RrZedl_GvNcmJFLsnm9GkPB/view?usp=sharing 
 
 To train the BERT re-ranker with standard training settings, `cd` into the `./BERT_re-ranker` folder and run:
 
