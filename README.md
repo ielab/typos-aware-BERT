@@ -1,6 +1,6 @@
 # Dealing with Typos for BERT-based Passage Retrieval and Ranking
 
-Code, data and results for the paper "Dealing with Typos for BERT-based Passage Retrieval and Ranking" presented at EMNLP 2021 main conference.
+Code, data and results for the paper [Dealing with Typos for BERT-based Passage Retrieval and Ranking](https://arxiv.org/pdf/2108.12139.pdf) presented at EMNLP 2021 main conference.
 
 
 ## Install
